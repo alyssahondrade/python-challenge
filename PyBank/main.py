@@ -24,7 +24,6 @@ with open(budget_csv) as csvfile:
 
     # Get header
     csv_header = next(csvreader)
-    print(csv_header)
 
     for row in csvreader:
         # Typecast (str -> int) at the start
@@ -65,8 +64,9 @@ for index, value in enumerate(changes):
 print("Financial Analysis")
 print(28*"-")
 print(f"Total Months: {total_months}")
-print(f"Total: {net_profit}")
+print(f"Total: ${net_profit}")
+print(f"Average Change: ${average_change}")
+print(f"Greatest Increase in Profits: {date_increase} ({greatest_increase})")
+print(f"Greatest Decrease in Profits: {date_decrease} ({greatest_decrease})")
 
-print(f"{greatest_increase} occurred on {date_increase}")
-print(f"{greatest_decrease} occurred on {date_decrease}")
-print(average_change)
+# Print results to text file
