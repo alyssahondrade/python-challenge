@@ -47,7 +47,7 @@ for index, vote in enumerate(won_votes):
 
 # Format results for printing to terminal and text file
 line1 = "Election Results"
-line2 = 25*"-"
+line2 = 32*"-"
 line3 = f"Total Votes: {total_votes}"
 line4 = f"Winner: {winner}"
 block1_format = [line1, line2, line3, line2]

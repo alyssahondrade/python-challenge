@@ -62,7 +62,7 @@ for index, value in enumerate(changes):
 
 # Format results for printing to terminal and text file
 line1 = "Financial Analysis"
-line2 = 28*"-"
+line2 = 32*"-"
 line3 = f"Total Months: {total_months}"
 line4 = f"Total: ${net_profit}"
 line5 = f"Average Change: ${average_change}"
