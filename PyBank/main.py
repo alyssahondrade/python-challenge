@@ -73,7 +73,7 @@ results_format = [line1, line2, line3, line4, line5, line6, line7]
 # Set variable for output file
 budget_result = os.path.join("./PyBank/analysis", "PyBank_results.txt")
 
-with open(budget_result, "x", newline='') as result:
+with open(budget_result, "w", newline='') as result:
     for line in results_format:
         result.write(line+"\n")
         print(line)
