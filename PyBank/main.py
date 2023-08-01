@@ -1,5 +1,6 @@
 import os
 import csv
+from statistics import mean
 
 # Initialise variables - Required
 total_months = 0
