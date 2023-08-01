@@ -60,13 +60,20 @@ for index, value in enumerate(changes):
         greatest_decrease = value
         date_decrease = date_column[index+1]
 
-# Print results to terminal
-print("Financial Analysis")
-print(28*"-")
-print(f"Total Months: {total_months}")
-print(f"Total: ${net_profit}")
-print(f"Average Change: ${average_change}")
-print(f"Greatest Increase in Profits: {date_increase} ({greatest_increase})")
-print(f"Greatest Decrease in Profits: {date_decrease} ({greatest_decrease})")
+# Format results for printing to terminal and text file
+line1 = "Financial Analysis"
+line2 = 28*"-"
+line3 = f"Total Months: {total_months}"
+line4 = f"Total: ${net_profit}"
+line5 = f"Average Change: ${average_change}"
+line6 = f"Greatest Increase in Profits: {date_increase} ({greatest_increase})"
+line7 = f"Greatest Decrease in Profits: {date_decrease} ({greatest_decrease})"
+results_format = [line1, line2, line3, line4, line5, line6, line7]
 
-# Print results to text file
+# Set variable for output file
+budget_result = os.path.join("./PyBank/analysis", "PyBank_results.txt")
+
+with open(budget_result, "x", newline='') as result:
+    for line in results_format:
+        result.write(line+"\n")
+        print(line)
