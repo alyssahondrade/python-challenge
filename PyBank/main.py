@@ -17,7 +17,7 @@ date_column = [] # hold the date values for finding greatest increase & decrease
 changes = [] # list to track changes in profit/losses
 
 # Import budget_data.csv
-budget_csv = os.path.join("./PyBank/resources", "budget_data.csv")
+budget_csv = os.path.join("resources", "budget_data.csv")
 
 with open(budget_csv) as csvfile:
     csvreader = csv.reader(csvfile, delimiter=",")
@@ -71,7 +71,7 @@ line7 = f"Greatest Decrease in Profits: {date_decrease} ({greatest_decrease})"
 results_format = [line1, line2, line3, line4, line5, line6, line7]
 
 # Set variable for output file
-budget_result = os.path.join("./PyBank/analysis", "PyBank_results.txt")
+budget_result = os.path.join("analysis", "PyBank_results.txt")
 
 with open(budget_result, "w", newline='') as result:
     for line in results_format:
