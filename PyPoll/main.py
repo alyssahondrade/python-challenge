@@ -54,7 +54,7 @@ block1_format = [line1, line2, line3, line2]
 block3_format = [line2, line4, line2]
 
 # Set variable for output file
-election_result = os.path.join("./PyPoll/analysis", "election_results.txt")
+election_result = os.path.join("./PyPoll/analysis", "PyPoll_results.txt")
 
 with open(election_result, "w", newline='') as result:
     # Print the first block of the results
