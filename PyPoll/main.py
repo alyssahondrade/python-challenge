@@ -64,7 +64,7 @@ with open(election_result, "w", newline='') as result:
     
     # Print the second block of the results
     for index, candidate in enumerate(candidates):
-        info = f"{candidate}: {vote_percentage[index]}% ({won_votes[index]})\n"
+        info = f"{candidate}: {vote_percentage[index]}% ({won_votes[index]})"
         result.write(info)
         print(info)
     
