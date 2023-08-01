@@ -13,7 +13,7 @@ candidate_column = []
 most_votes = 0
 
 # Import election_data.csv
-election_csv = os.path.join("./PyPoll/resources", "election_data.csv")
+election_csv = os.path.join("resources", "election_data.csv")
 
 with open(election_csv) as csvfile:
     csvreader = csv.reader(csvfile, delimiter=",")
@@ -54,7 +54,7 @@ block1_format = [line1, line2, line3, line2]
 block3_format = [line2, line4, line2]
 
 # Set variable for output file
-election_result = os.path.join("./PyPoll/analysis", "PyPoll_results.txt")
+election_result = os.path.join("analysis", "PyPoll_results.txt")
 
 with open(election_result, "w", newline='') as result:
     # Print the first block of the results
