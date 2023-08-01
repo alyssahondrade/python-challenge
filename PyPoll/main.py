@@ -49,16 +49,26 @@ for index, vote in enumerate(won_votes):
 line1 = "Election Results"
 line2 = 25*"-"
 line3 = f"Total Votes: {total_votes}"
-print(total_votes)
-print(candidates)
-print(won_votes)
-print(vote_percentage)
-print(most_votes)
-print(winner)
+line4 = f"Winner: {winner}"
+block1_format = [line1, line2, line3, line2]
+block3_format = [line2, line4, line2]
 
 # Set variable for output file
-# election_result = os.path.join("./PyPoll/analysis", "election_results.txt")
+election_result = os.path.join("./PyPoll/analysis", "election_results.txt")
 
-# with open(election_result, "w", newline='') as result:
-for index, candidate in enumerate(candidates):
-    print(f"{candidate}: {vote_percentage[index]}% ({won_votes[index]})")
+with open(election_result, "w", newline='') as result:
+    # Print the first block of the results
+    for line in block1_format:
+        result.write(line + "\n")
+        print(line)
+    
+    # Print the second block of the results
+    for index, candidate in enumerate(candidates):
+        info = f"{candidate}: {vote_percentage[index]}% ({won_votes[index]})\n"
+        result.write(info)
+        print(info)
+    
+    # Print the third block of the results
+    for line in block3_format:
+        result.write(line + "\n")
+        print(line)
