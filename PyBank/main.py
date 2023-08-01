@@ -75,5 +75,5 @@ budget_result = os.path.join("./PyBank/analysis", "PyBank_results.txt")
 
 with open(budget_result, "w", newline='') as result:
     for line in results_format:
-        result.write(line+"\n")
+        result.write(line + "\n")
         print(line)
