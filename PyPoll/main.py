@@ -57,3 +57,8 @@ print(most_votes)
 print(winner)
 
 # Set variable for output file
+# election_result = os.path.join("./PyPoll/analysis", "election_results.txt")
+
+# with open(election_result, "w", newline='') as result:
+for index, candidate in enumerate(candidates):
+    print(f"{candidate}: {vote_percentage[index]}% ({won_votes[index]})")
