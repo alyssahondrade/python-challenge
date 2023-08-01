@@ -19,4 +19,8 @@ with open(election_csv) as csvfile:
     for row in csvreader:
         total_votes += 1
 
+        if row[2] not in candidates:
+            candidates.append(row[2])
+
 print(total_votes)
+print(candidates)
