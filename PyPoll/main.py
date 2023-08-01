@@ -32,8 +32,11 @@ with open(election_csv) as csvfile:
 
 for candidate in candidates:
     won_votes.append(candidate_column.count(candidate))
-    
+
+for vote in won_votes:
+    vote_percentage.append(round(100*vote/total_votes, 3))
 
 print(total_votes)
 print(candidates)
 print(won_votes)
+print(vote_percentage)
