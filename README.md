@@ -68,5 +68,18 @@ The goal of **PyPoll** is to create a Python script that analyses the election v
 6. Use a for-loop to print to both terminal and text file.
 
 ### PyPoll
+1. Import `election_data.csv`.
+2. Store the header row using `next()`.
+3. Calculate the following:
+    1. Total number of votes cast, by incrementing `total_votes` in the for-loop.
+    2. Complete list of candidates who received votes by either:
+       1. Appending to the `candidates` list `if not` already on the list.
+       2. Creating a set from the candidates column.
+    3. Total number of votes won by each candidate, by appending to `won_votes` using a for-loop.
+    4. Percentage of votes won by each candidate, by using the `won_votes` list and dividing by the `total_votes`.
+4. Get the winner by using a for-loop over `won_votes` to look for the `most_votes`.
+5. Format the results and store each string in 2 lists (`block1_format` and `block3_format`) to simplify printing later.
+6. Define a relative output path for the text file: `analysis/PyPoll_results.txt`.
+7. Use for-loops to print to both terminal and text file.
 
 ## References
