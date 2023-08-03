@@ -53,8 +53,8 @@ Using the dataset [`election_data.csv`](https://github.com/alyssahondrade/python
        4. Using `Data > Remove Duplicates`:
            1. There are 3 unique values for county: `Jefferson, Denver, Arapahoe`.
            2. There are 3 unique values for candidate: `Charles Casper Stockham, Diana DeGette, Raymon Anthony Doane`.
-           3. There are nil duplicates for Ballot Id.
-3. Pseudocode produced to identify strategy.
+           3. There are nil duplicates for Ballot ID.
+3. Write pseudocode to identify strategy: variables needed, input/output requirements, tools and modules required, etc.
 
 ### PyBank
 1. Import [`budget_data.csv`](https://github.com/alyssahondrade/python-challenge/blob/main/PyBank/resources/budget_data.csv).
