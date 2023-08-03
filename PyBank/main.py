@@ -16,9 +16,10 @@ profit_column = [] # hold the profit/losses values for comparison
 date_column = [] # hold the date values for finding greatest increase & decrease
 changes = [] # list to track changes in profit/losses
 
-# Import budget_data.csv
+# Set variable for input file
 budget_csv = os.path.join("resources", "budget_data.csv")
 
+# Import budget_data.csv
 with open(budget_csv) as csvfile:
     csvreader = csv.reader(csvfile, delimiter=",")
 
