@@ -8,10 +8,11 @@ Github repository at: [https://github.com/alyssahondrade/python-challenge.git](h
     1. [Goal - PyBank](https://github.com/alyssahondrade/python-challenge/blob/main/README.md#goal---pybank)
     2. [Goal - PyPoll](https://github.com/alyssahondrade/python-challenge/blob/main/README.md#goal---pypoll)
     3. [Repository Structure](https://github.com/alyssahondrade/python-challenge/blob/main/README.md#repository-structure)
+    4. [Dataset](https://github.com/alyssahondrade/python-challenge/blob/main/README.md#dataset)
 2. [Approach](https://github.com/alyssahondrade/python-challenge/blob/main/README.md#approach)
     1. [PyBank](https://github.com/alyssahondrade/python-challenge/blob/main/README.md#pybank)
     2. [PyPoll](https://github.com/alyssahondrade/python-challenge/blob/main/README.md#pypoll)
-4. [References](https://github.com/alyssahondrade/python-challenge/blob/main/README.md#references)
+3. [References](https://github.com/alyssahondrade/python-challenge/blob/main/README.md#references)
 
 ## Introduction
 ### Goal - PyBank
@@ -39,6 +40,9 @@ Using the dataset [`election_data.csv`](https://github.com/alyssahondrade/python
 - `PyBank/resources/` directory contains [`budget_data.csv`](https://github.com/alyssahondrade/python-challenge/blob/main/PyBank/resources/budget_data.csv)
 - `PyPoll/analysis/` directory contains results for `PyPoll`
 - `PyPoll/resources/` directory contains [`election_data.csv`](https://github.com/alyssahondrade/python-challenge/blob/main/PyPoll/resources/election_data.csv)
+
+### Dataset
+The datasets were created by edX Boot Camps LLC.
 
 ## Approach
 1. Setup the repository for the project, as per instructions.
@@ -72,7 +76,7 @@ The relevant `main.py` script is run from the directory in which it resides (i.e
     4. Average changes, use the `mean` function from the `statistics` module over the `average_change` list.
     5. The greatest increase and decrease in profits:
        1. Create a new list to capture the `Date` column using the for-loop, called `date_column`.
-       2. Using a for-loop and if-statements, hold and compare `greatest_increase` and `greatest_decrease` with each value in `changes`.
+       2. Using a for-loop and if-statements, hold and compare `greatest_increase` and `greatest_decrease` with each value in the `changes` list.
 4. Format the results and store each string in a list `results_format`, this will avoid repetition when printing to both terminal and text file.
 5. Define a relative output path for the text file: `analysis/PyBank_results.txt`
 6. Use a for-loop to print to both terminal and text file.
