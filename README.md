@@ -1,5 +1,6 @@
 # python-challenge
 Module 3 Challenge - UWA/edX Data Analytics Bootcamp
+
 Github repository at: [https://github.com/alyssahondrade/python-challenge.git](https://github.com/alyssahondrade/python-challenge.git)
 
 ## Table of Contents
@@ -56,6 +57,9 @@ Using the dataset [`election_data.csv`](https://github.com/alyssahondrade/python
            3. There are nil duplicates for Ballot ID.
 3. Write pseudocode to identify strategy: variables needed, input/output requirements, tools and modules required, etc.
 
+**Assumption**:
+The relevant `main.py` script is run from the directory in which it resides (i.e. `main.py` for PyPoll is run from the `PyPoll/` directory). This ensures the correct relative path to open the corresponding spreadsheet.
+
 ### PyBank
 1. Import [`budget_data.csv`](https://github.com/alyssahondrade/python-challenge/blob/main/PyBank/resources/budget_data.csv).
 2. Store the header row using `next()`.
@@ -89,3 +93,10 @@ Using the dataset [`election_data.csv`](https://github.com/alyssahondrade/python
 7. Use for-loops to print to both terminal and text file.
 
 ## References
+- [1] Python os.path.join [https://careerkarma.com/blog/python-os-path-join/](https://careerkarma.com/blog/python-os-path-join/)
+
+- [2] How to Read a CSV File in Python [https://earthly.dev/blog/csv-python/](https://earthly.dev/blog/csv-python/)
+
+- [3] 5 Ways to Find the Average of a List in Python [https://www.digitalocean.com/community/tutorials/average-of-list-in-python](https://www.digitalocean.com/community/tutorials/average-of-list-in-python)
+
+- [4] File Handling in Python [https://www.freecodecamp.org/news/file-handling-in-python/](https://www.freecodecamp.org/news/file-handling-in-python/)
